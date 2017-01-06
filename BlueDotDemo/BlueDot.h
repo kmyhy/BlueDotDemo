@@ -34,6 +34,5 @@
 @property (nonatomic, strong) BlueDotAnnotation* blueDotAnnotation;
 @property (nonatomic,weak)id<BlueDotDelegate> delegate;
 
--(void)beginAnimate;
--(void)endAnimate;
+
 @end

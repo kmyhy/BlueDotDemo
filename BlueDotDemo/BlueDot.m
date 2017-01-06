@@ -10,16 +10,16 @@
 
 #define intrinsic_width 48
 
-@interface BlueDot()<MyCalloutViewDelegate>
-@property (nonatomic, strong, readwrite) MyCalloutView *calloutView;
-@end
-
-@implementation BlueDot{
+@interface BlueDot()<MyCalloutViewDelegate>{
     CADisplayLink *displayLink;
     CGFloat currentWidthPercent;
     int sign;
     
 }
+@property (nonatomic, strong, readwrite) MyCalloutView *calloutView;
+@end
+
+@implementation BlueDot
 
 -(instancetype)initWithAnnotation:(id<MKAnnotation>)annotation reuseIdentifier:(NSString *)reuseIdentifier{
     self = [super initWithAnnotation:annotation reuseIdentifier:reuseIdentifier];
@@ -63,6 +63,7 @@
 }
 
 -(void)drawRect:(CGRect)rect{
+    
     [self  drawBlueDot];
 }
 -(void)setWidth:(CGFloat)width{
@@ -120,7 +121,10 @@
 -(void)timeUpdate:(CADisplayLink*)link {
     
     currentWidthPercent += sign*(link.duration*(_maxPercent-_minPercent)/_period);
-    [self setNeedsDisplay];// 调用 drawRect 
+    
+    /* BlueRot 继承 MKAnnotationView，MKAnnotationView 是一种特殊的 UIView，它不会按帧率自动调用 drawRect 方法来绘制 UI（除了开头会调用 2 次）。因此我们需要手动触发 drawRect 方法（即发送 setNeedsDisplay 信息）。
+     */
+    [self setNeedsDisplay];
 //    NSLog(@"current percent:%f",currentWidthPercent);
     //        NSLog("\(tick)")
     if (currentWidthPercent >= _maxPercent || currentWidthPercent <= _minPercent){
