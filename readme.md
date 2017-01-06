@@ -73,7 +73,7 @@ BlueDotAnnotation 是 BlueDot 在 MapView 上的抽象表示，创建好一个 B
 
 ## 定制
 
-小蓝点的样式通过 BlueDotAnnotation 定制。BlueDotAnnotation 提供了如下属性 ：
+小蓝点的样式通过 BlueDot 定制。BlueDot 提供了如下属性 ：
 
 * CGFloat period;
 
