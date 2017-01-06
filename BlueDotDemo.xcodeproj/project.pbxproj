@@ -13,6 +13,13 @@
 		128981761E1DE9A000EDCA3F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 128981741E1DE9A000EDCA3F /* Main.storyboard */; };
 		128981781E1DE9A000EDCA3F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 128981771E1DE9A000EDCA3F /* Assets.xcassets */; };
 		1289817B1E1DE9A000EDCA3F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 128981791E1DE9A000EDCA3F /* LaunchScreen.storyboard */; };
+		128981851E1DE9F200EDCA3F /* BlueDot.m in Sources */ = {isa = PBXBuildFile; fileRef = 128981841E1DE9F200EDCA3F /* BlueDot.m */; };
+		128981881E1DEA1600EDCA3F /* BlueDotAnnotation.m in Sources */ = {isa = PBXBuildFile; fileRef = 128981871E1DEA1600EDCA3F /* BlueDotAnnotation.m */; };
+		1289818B1E1DEA2400EDCA3F /* MyCalloutView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1289818A1E1DEA2400EDCA3F /* MyCalloutView.m */; };
+		1289818D1E1DEF0300EDCA3F /* kid_avatar_2@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1289818C1E1DEF0300EDCA3F /* kid_avatar_2@2x.png */; };
+		1289818F1E1DEFCC00EDCA3F /* blue_circle_transparent@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1289818E1E1DEFCC00EDCA3F /* blue_circle_transparent@2x.png */; };
+		128981911E1DF68C00EDCA3F /* kid_avatar_bg@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 128981901E1DF68C00EDCA3F /* kid_avatar_bg@2x.png */; };
+		128981931E1DF6CA00EDCA3F /* kid_avatar_empty@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 128981921E1DF6CA00EDCA3F /* kid_avatar_empty@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +33,16 @@
 		128981771E1DE9A000EDCA3F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1289817A1E1DE9A000EDCA3F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1289817C1E1DE9A000EDCA3F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		128981831E1DE9F200EDCA3F /* BlueDot.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BlueDot.h; sourceTree = "<group>"; };
+		128981841E1DE9F200EDCA3F /* BlueDot.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BlueDot.m; sourceTree = "<group>"; };
+		128981861E1DEA1600EDCA3F /* BlueDotAnnotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BlueDotAnnotation.h; sourceTree = "<group>"; };
+		128981871E1DEA1600EDCA3F /* BlueDotAnnotation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BlueDotAnnotation.m; sourceTree = "<group>"; };
+		128981891E1DEA2400EDCA3F /* MyCalloutView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyCalloutView.h; sourceTree = "<group>"; };
+		1289818A1E1DEA2400EDCA3F /* MyCalloutView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyCalloutView.m; sourceTree = "<group>"; };
+		1289818C1E1DEF0300EDCA3F /* kid_avatar_2@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "kid_avatar_2@2x.png"; sourceTree = "<group>"; };
+		1289818E1E1DEFCC00EDCA3F /* blue_circle_transparent@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "blue_circle_transparent@2x.png"; sourceTree = "<group>"; };
+		128981901E1DF68C00EDCA3F /* kid_avatar_bg@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "kid_avatar_bg@2x.png"; sourceTree = "<group>"; };
+		128981921E1DF6CA00EDCA3F /* kid_avatar_empty@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "kid_avatar_empty@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,9 +75,11 @@
 		1289816A1E1DE9A000EDCA3F /* BlueDotDemo */ = {
 			isa = PBXGroup;
 			children = (
+				128981821E1DE9E900EDCA3F /* BlueDot */,
 				1289816E1E1DE9A000EDCA3F /* AppDelegate.h */,
 				1289816F1E1DE9A000EDCA3F /* AppDelegate.m */,
 				128981711E1DE9A000EDCA3F /* ViewController.h */,
+				1289818C1E1DEF0300EDCA3F /* kid_avatar_2@2x.png */,
 				128981721E1DE9A000EDCA3F /* ViewController.m */,
 				128981741E1DE9A000EDCA3F /* Main.storyboard */,
 				128981771E1DE9A000EDCA3F /* Assets.xcassets */,
@@ -77,6 +96,22 @@
 				1289816C1E1DE9A000EDCA3F /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		128981821E1DE9E900EDCA3F /* BlueDot */ = {
+			isa = PBXGroup;
+			children = (
+				1289818E1E1DEFCC00EDCA3F /* blue_circle_transparent@2x.png */,
+				128981921E1DF6CA00EDCA3F /* kid_avatar_empty@2x.png */,
+				128981901E1DF68C00EDCA3F /* kid_avatar_bg@2x.png */,
+				128981831E1DE9F200EDCA3F /* BlueDot.h */,
+				128981841E1DE9F200EDCA3F /* BlueDot.m */,
+				128981891E1DEA2400EDCA3F /* MyCalloutView.h */,
+				1289818A1E1DEA2400EDCA3F /* MyCalloutView.m */,
+				128981861E1DEA1600EDCA3F /* BlueDotAnnotation.h */,
+				128981871E1DEA1600EDCA3F /* BlueDotAnnotation.m */,
+			);
+			name = BlueDot;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,9 +172,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				128981931E1DF6CA00EDCA3F /* kid_avatar_empty@2x.png in Resources */,
 				1289817B1E1DE9A000EDCA3F /* LaunchScreen.storyboard in Resources */,
+				1289818F1E1DEFCC00EDCA3F /* blue_circle_transparent@2x.png in Resources */,
 				128981781E1DE9A000EDCA3F /* Assets.xcassets in Resources */,
+				128981911E1DF68C00EDCA3F /* kid_avatar_bg@2x.png in Resources */,
 				128981761E1DE9A000EDCA3F /* Main.storyboard in Resources */,
+				1289818D1E1DEF0300EDCA3F /* kid_avatar_2@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -151,7 +190,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				128981731E1DE9A000EDCA3F /* ViewController.m in Sources */,
+				128981851E1DE9F200EDCA3F /* BlueDot.m in Sources */,
+				128981881E1DEA1600EDCA3F /* BlueDotAnnotation.m in Sources */,
 				128981701E1DE9A000EDCA3F /* AppDelegate.m in Sources */,
+				1289818B1E1DEA2400EDCA3F /* MyCalloutView.m in Sources */,
 				1289816D1E1DE9A000EDCA3F /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -307,6 +349,7 @@
 				128981811E1DE9A000EDCA3F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
